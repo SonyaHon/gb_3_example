@@ -5,7 +5,6 @@ const path = require('path');
 
 const parseArgs = require('./arg-parser');
 const withSpinner = require('./with-spinner');
-const stream = require("stream");
 
 const {filePath, strings, format} = parseArgs();
 
