@@ -1,4 +1,9 @@
 # GeekBrains file parser implementation example
+## Setup:
+```bash
+    // install project dependencies
+    npm install
+```
 ## Usage:
 ```bash
     // Show help entry
