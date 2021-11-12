@@ -5,6 +5,7 @@ const path = require('path');
 
 const parseArgs = require('./arg-parser');
 const withSpinner = require('./with-spinner');
+const stream = require("stream");
 
 const {filePath, strings, format} = parseArgs();
 
@@ -33,6 +34,7 @@ withSpinner(`Processing file ${filePath} for ${strings.join(', ')} strings.`, (f
     });
 
     readStream.on('end', () => {
+        writeStreams.forEach(({stream}) => stream.end());
         console.log(`\nDone. Parsed ${linesTotal} lines.`);
         finishCallback();
     });
