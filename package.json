@@ -1,0 +1,17 @@
+{
+  "name": "gb_3_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "yargs": "^17.2.1",
+    "cli-spinner": "^0.2.10",
+    "colors": "^1.4.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
